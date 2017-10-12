@@ -407,7 +407,7 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Lucian Freeze and Brett Whitson)% <-this % stops a space
+\author{Lucian Freeze, Brett Whitson, and Adam Chisolm% <-this % stops a space
 }
 %Generally you should be the only author, so drop Michael Shell's name when you are creating your lab reports
 
@@ -474,11 +474,7 @@
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Abstracts are generally a very concise, short description of what you are writing about.  It's good to get into the habit of writing them.  Give a 1 paragraph explanation of your project, who the target is, and what you feel you have achieved so far in the project.
-
-This project is an application which allows a user to view and manage financial accounts and budgets. The program
-will initiallly use, as a basis, the factory method pattern to generate and edit instances of accounts and budgets. Target
-audience for this application includes any persons looking to better manage their finances.
+This project is a graphical application which allows a user to view and manage financial accounts and budgets. The target user for the project is primarily a college-age student; however, the application should be useful to anyone who wishes to use it. The intent is to provide said users the ability to manage finances in an easy-to-use, versatile environment.
 \end{abstract}
 
 %As the comment below states, you usually only do these when you're doing a final submission of a paper, to make it easier to find your work when searching.
@@ -539,31 +535,24 @@ audience for this application includes any persons looking to better manage thei
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-Your introduction should give an introduction to your project.  What are you trying to accomplish (high level), who do you expect to target with your project?  What do you expect your target audience will get out of it?
-
-Should you need to cite anything, use the \emph{cite} keyword, and refer to something from your bibliography.  For example, this was put together with the help of a \LaTeX guide\cite{IEEEhowto:kopka}.
 
 
-Make sure that by the end of your introduction the reader knows what your project is and why you are doing it.
-
-Everyone likes to save money. Having a simple and intuitive application to manage one’s finances would make this
-much easier. This application intends to serve that purpose by giving the user the tools needed to achieve this goal.
+Students like (read: "need") to save money. Having a simple and intuitive application to manage one’s finances would make this
+much more acheivable. This application intends to serve that purpose by giving the user the tools needed to achieve this goal.
 
 A section to keep track of accounts and balances is to be implemented, allowing a user to view this information and
-add/remove accounts with possible customizations.
+add/remove accounts with possible customizations. Users will also be able to enter and edit transactions, dynamically updating the initial balance.
 
-Another section for budget creation and editing is also to be implemented.
+Another section for budget creation and editing is also to be implemented, allowing users to track how their money is spent based on categories.
+
+A reports section will be implemented to allow users to visually examine their transaction data within a certain time period.
 
 
-
-\subsection{Subsection Heading Here}
-Occasionally you need to break your sections into separate parts, you will likely not need a subsection for every section
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
-Occasionally you will need to break your subsections into separate parts, if you find yourself using this often, you're likely going overboard.  Don't try to go any lower down than this...
+
 
 
 % An example of a floating figure using the graphicx package.
@@ -662,75 +651,40 @@ Occasionally you will need to break your subsections into separate parts, if you
 % \fnbelowfloat command of the stfloats package.
 
 \subsection{Background}
-In this section, give a brief background to any concepts the reader may need to know to make it through your paper.   Are there any specific terms the reader needs to be familiar with?
 
-Also, consider going into your personal connection with this project -- why did you decide to do it?
 
-This project derived from the demand for better money management and closely matches the type of design patterns
-covered in CSCI352.
+Inspiration for this project came from the stereotypical financial struggle of a college student. We wanted to create an application that might possibly help those in this situation.
 
 
 \subsection{Challenges}
-For your first deliverable, this should be a list of where you believe you will get stuck -- what do you see as the most difficult portion of your project?
 
-As you overcome these challenges, this section becomes more of a retrospective: don't only identify the challenge, but also briefly outline the solution!
-
-Possible challenges for this project include implementing graphical components and managing information’s security
-within the application.
+Possible challenges for this project include implementing graphical components and managing information's security within the application. The "Reports" section is to have elements such as dynamic graphs, which we are not yet certain of how to implement. Information security on a real-world scale is also a challenge we have yet to face, so this could prove to be difficult.
 
 \section{Scope}
-This section is a bit tricksy.  You are going to do your best to set up ground rules:  How will you know when your project is done?
-
-If you were doing this under contract for a company, this would be your checklist to make sure you get paid.  We will be going into this in more detail over time, but you should start planning your major goals of the project as soon as possible.
-
-For every sub(sub)section below, make sure to mark which items are basic goals (project won't be done without it) and which ones are stretch goals (it would be really cool to do...).  We will be meeting one-on-one to help identify which goals go where.
-
 Our project aims to develop a simple, operable program in which users can securely and easily manage their finances.
 When we have fully implemented account and budget functionality along with some aesthetic aids and security measures,
 the project will be at completion.
 
-Additional goals for this project include bank account integration and the inclusion of investment features.
+Additional goals for this project include incorporating real-time investment profiles and a possible implementation of remote server-based account and credential storage/management.
 
 \subsection{Requirements}
-As part of fleshing out the scope of your requirements, you'll also need to keep in mind both your functional and non-functional requirements.  These should be listed, and explained in detail as necessary.  Use this area to explain how you gathered these requirements.
 
 \subsubsection{Functional}
 \begin{itemize}
-\item User needs to have a private shopping cart -- this cannot be shared between users, and needs to maintain state across subsequent visits to the site
-\item Users need to have website accounts -- this will help track recent purchases, keep shopping cart records, etc.
-\item You'll need more than 2 of these...
+\item Users need user accounts -- each user needs to only be able to access his/her personal data/settings and no one else's
+\item Users need financial accounts --  checking and savings accounts will need to be implemented and able to be created/edited by the user
+\item Users need budgets -- budgets will need to be implemented and able to be created/edited by the user
+\item Users need transaction functionality -- user will need to be able to edit and add transactions per account; possible database will be needed to created
+\item Users need reports -- opt-in; gives user a weekly/bi-weekly/monthly representation of spending in categories; bar/pie graph form 
 \end{itemize}
 
 \subsubsection{Non-Functional}
 \begin{itemize}
-\item Security -- user credentials must be encrypted on disk, users should be able to reset their passwords if forgotten
-\item you'll typically have fewer non-functional than functional requirements
+\item Security -- user credentials and account information must be encrypted, users should be able to reset their passwords if forgotten
+\item Data integrity -- user and especially account data must be reliably stored and accessible for successive use
 \end{itemize}
 
 \subsection{Use Cases}
-This subsection is arguably part of how you define your project scope (why it is in the Scope section...).  In a traditional Waterfall approach, as part of your requirements gathering phase (what does the product actually \emph{need} to do?), you will typically sit down with a user to develop use cases.
-
-You should have a table listing all use cases discussed in the document, the ID is just the order it is listed in, the name should be indicative of what should happen, the primary actor is typically most important in an application where you may have different levels of users (think admin vs normal user), complexity is a best-guess on your part as to how hard it should be.  A lower number in priority indicates that it needs to happen sooner rather than later.  A sample table, or Use Case Index can be seen in Table \ref{tab:useCaseIndex}.
-
-
-
-
-\begin{table}
-\centering
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-Use Case ID & Use Case Name & Primary Actor & Complexity & Priority \\
-\hline \hline
-1 & Add item to cart & Shopper & Med & 1\\
-\hline
-2 & Checkout & Shopper & Med & 1\\
-\hline
-
-\end{tabular}
-\caption{Sample use case table}
-\label{tab:useCaseIndex}
-\end{table}
-
 
 \begin{itemize}
 \item[Use Case \#:] 1
@@ -776,49 +730,30 @@ Flow:
 \item[At Termination:] The user is able to view their budgets.
 \end{enumerate}
 
-\begin{figure}[h]
-\includegraphics[height=250px, width=350px]{cat1.jpg}
-\caption{First picture, this is a kitten, not a use case diagram}
-\label{cat1}
-\end{figure}
+\newpage
 
 \subsection{Interface Mockups}
-At first, this will largely be completely made up, as you get further along in your project, and closer to a final product, this will typically become simple screenshots of your running application.
-
-In this subsection, you will be showing what the screen should look like as the user moves through various use cases (make sure to tie the interface mockups back to the specific use cases they illustrate).
-
-
-
-\section{Project Timeline}
-Go back to your notes and look up a typical project development life cycle for the Waterfall approach.  How will you follow this life cycle over the remainder of this semester?  This will usually involve a chart showing your proposed timeline, with specific milestones plotted out.  Make sure you have deliverable dates from the course schedule listed, with a plan to meet them (NOTE: these are generally optimistic deadlines).
-
-\section{Project Structure}
-At first, this will be a little empty (it will need to be filled in by the time you turn in your final report).  This is your chance to discuss all of your design decisions (consider this the README's big brother).
-
-\subsection{UML Outline}
-Show the full structure of your program.  Make sure to keep on updating this section as your project evolves (you often start out with one plan, but end up modifying things as you move along).  As a note, while Dia fails miserably at generating pdfs (probably my fault), I have had much success with png files.  Make sure to wrap your images in a \texttt{figure} environment, and to reference with the \texttt{ref} command.  For example, see Figure \ref{cat2}.
 
 \begin{figure}[h]
-\includegraphics[scale=1.5]{cat2.jpg}
-\caption{Your figures should be in the \emph{figure} environment, and have captions.  Should also be of diagrams pertaining to your project, not random internet kittens}
-\label{cat2}
+\centering
+\includegraphics[scale = 0.6]{mainwindow.png}
+\caption{This image is a mockup of the initial sign in/up screen for our application.}
+\label{mainwindow}
 \end{figure}
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.6]{signup.png}
+\caption{This image is a mockup of the sign up page for our application.}
+\label{signup}
+\end{figure}
 
-\subsection{Design Patterns Used}
-Make sure to actually use at least 2 design patterns from this class.  This is not normally part of such documentation, but largely just specific to this class -- I want to see you use the patterns!
-
-This application will use the Factory Method pattern
-
-
-\section{Results}
-This section will start out a little vague, but it should grow as your project evolves.  With each deliverable you hand in, give me a final summary of where your project stands.  By the end, this should be a reflective section discussing how many of your original goals you managed to attain/how many desired use cases you implemented/how many extra features you added.
-
-\subsection{Future Work}
-Where are you going next with your project?
-For early deliverables, what are your next steps?  (HINT: you will typically want to look back at your timeline and evaluate: did you meet your expected goals?  Are you ahead of schedule?  Did you decide to shift gears and implement a new feature?)
-By the end, what do you plan on doing with this project?  Will you try to sell it?  Set it on fire?  Link to it on your resume and forget it exists?
-
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.6]{dashboard.png}
+\caption{This image is a mockup of the Dashboard (the main user interface) for a logged-in user.}
+\label{dashboard}
+\end{figure}
 
 
 
@@ -897,13 +832,6 @@ By the end, what do you plan on doing with this project?  Will you try to sell i
 %Make sure to reference any resource used aside from the lab itself!
 %(you can make a separate *.bib file if preferred, this just tends to be the quick and dirty approach)
 
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
 
 % biography section
 % 
@@ -918,22 +846,14 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 
 %Ignore this for the lab
 
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
 
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+
 
 % insert where needed to balance the two columns on the last page with
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate
