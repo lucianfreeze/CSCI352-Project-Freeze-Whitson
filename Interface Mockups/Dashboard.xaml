@@ -1,0 +1,34 @@
+﻿<Window x:Class="Interface_Mockups.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface_Mockups"
+        Title="Dashboard" Height="720" Width="1080" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/Feas2.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <TabControl TabStripPlacement="Top">
+            <TabControl.Background>
+                <ImageBrush/>
+            </TabControl.Background>
+            <TabItem Header="General" Width="200">
+                <Label FontSize="100" Foreground="White"/>
+            </TabItem>
+            <TabItem Header="Finances" Width="200">
+                <Label Content="financial stuff"  FontSize="100" Foreground="White"/>
+            </TabItem>
+            <TabItem Header="Budgets" Width="200">
+                <Label Content="Budget stuff" FontSize="100" Foreground="White"/>
+            </TabItem>
+            <TabItem Header="Reports" Width="200">
+                <Label Content="Report Stuff" FontSize="100" Foreground="White"/>
+            </TabItem>
+            <TabItem Header="Account Settings" Width="200">
+                <Label Content="Account settings" FontSize="100" Foreground="White" Margin="0,0,0,500"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
