@@ -1,0 +1,57 @@
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe.config
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.pdb
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csprojResolveAssemblyReference.cache
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.g.cs
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\App.g.cs
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.baml
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.g.resources
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.exe
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.pdb
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.g.cs
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.baml
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\SignUp.g.cs
+C:\Users\Brett\source\repos\Interface Mockups\Interface Mockups\obj\Debug\SignUp.baml
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe.config
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.pdb
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csprojResolveAssemblyReference.cache
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.g.cs
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.g.cs
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\SignUp.g.cs
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\App.g.cs
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.baml
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.baml
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\SignUp.baml
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.g.resources
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.exe
+C:\Users\Lucian Freeze\Desktop\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.pdb
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe.config
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.pdb
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csprojResolveAssemblyReference.cache
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.g.cs
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.g.cs
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\SignUp.g.cs
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\App.g.cs
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.baml
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.baml
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\SignUp.baml
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.g.resources
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.exe
+C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.pdb
