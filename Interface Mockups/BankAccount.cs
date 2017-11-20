@@ -12,7 +12,8 @@ public class BankAccount
 
 	public BankAccount()
 	{
-
+        Balance = 0;
+        AccountName = "account";
 	}
 }
 

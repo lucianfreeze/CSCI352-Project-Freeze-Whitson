@@ -55,3 +55,22 @@ C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\
 C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
 C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.exe
 C:\Users\lfreeze\OneDrive\MOCKUPS\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.pdb
+C:\Users\Brett\Desktop\Finance\Interface Mockups\bin\Debug\Interface Mockups.exe.config
+C:\Users\Brett\Desktop\Finance\Interface Mockups\bin\Debug\Interface Mockups.exe
+C:\Users\Brett\Desktop\Finance\Interface Mockups\bin\Debug\Interface Mockups.pdb
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.csprojResolveAssemblyReference.cache
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Dashboard.g.cs
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\MainWindow.g.cs
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\SignUp.g.cs
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\App.g.cs
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Dashboard.baml
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\MainWindow.baml
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\SignUp.baml
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.g.resources
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.exe
+C:\Users\Brett\Desktop\Finance\Interface Mockups\obj\Debug\Interface Mockups.pdb

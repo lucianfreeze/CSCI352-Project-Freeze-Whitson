@@ -23,5 +23,10 @@ namespace Interface_Mockups
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UserAccount userAccount = new UserAccount(SignUpNameBox.Text, SignUpLastNameBox.Text, SignUpEmailBox.Text, SignUpPasswordBox.Text);
+        }
     }
 }
