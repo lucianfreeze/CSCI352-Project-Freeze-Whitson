@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interface_Mockups"
-        Title="Dashboard" Height="720" Width="1080" WindowStartupLocation="CenterScreen">
+        Title="Dashboard" Height="720" Width="1080" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="images/Feas2.jpg" Stretch="Fill"/>
@@ -13,11 +13,11 @@
             <TabControl.Background>
                 <ImageBrush/>
             </TabControl.Background>
-            <TabItem Header="General" Width="200">
-                <Label FontSize="100" Foreground="White"/>
-            </TabItem>
-            <TabItem Header="Finances" Width="200">
-                <Label Content="financial stuff"  FontSize="100" Foreground="White"/>
+            <TabItem Header="Accounts" Width="200">
+                <StackPanel Margin="109,10,109,10" Orientation="Vertical">
+                    <Button Height="100" Width="850" Content="+Add New Account" TextBlock.FontSize="45"/>
+                    <Button Height="50" Width="100" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>
+                </StackPanel>
             </TabItem>
             <TabItem Header="Budgets" Width="200">
                 <Label Content="Budget stuff" FontSize="100" Foreground="White"/>

@@ -23,5 +23,12 @@ namespace Interface_Mockups
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow logIn = new MainWindow();
+            logIn.Show();
+            this.Close();
+        }
     }
 }
