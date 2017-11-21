@@ -27,6 +27,10 @@ namespace Interface_Mockups
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             UserAccount userAccount = new UserAccount(SignUpNameBox.Text, SignUpLastNameBox.Text, SignUpEmailBox.Text, SignUpPasswordBox.Text);
+            userAccount.SaveAccount();
+            Window MainWindow = new MainWindow();
+            MainWindow.Show();
+            this.Close();
         }
     }
 }
