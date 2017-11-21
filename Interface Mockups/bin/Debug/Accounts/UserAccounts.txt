@@ -1,9 +1,4 @@
-Lucian/Brett
-Freeze/Whitson
-genericemail@mail4fun.com
-password1234
 first
 Last
-useynamo
-passerverd
-
+username
+password

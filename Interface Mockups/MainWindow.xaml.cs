@@ -56,7 +56,7 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            UserAccount x = new UserAccount("first", "Last", "useynamo", "passerverd");
+            UserAccount x = new UserAccount("first", "Last", "username", "password");
             if (UsernameBox.Text == x.Email && x.password_matches(PasswordBox.Text) == true)
             {
                 Dashboard dashboard = new Dashboard();
