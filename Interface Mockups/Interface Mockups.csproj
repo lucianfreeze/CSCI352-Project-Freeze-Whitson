@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Interface_Mockups.App</StartupObject>
+    <StartupObject>Interface_Mockups.ReclaimMain</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

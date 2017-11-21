@@ -26,22 +26,7 @@ namespace Interface_Mockups
 
         public MainWindow()
         {
-            users = new List<UserAccount>();
             InitializeComponent();
-            string path = "Accounts/UserAccounts.txt";
-            char newline = '\n';
-            string fileread = File.ReadAllText(path);
-            info = fileread.Split(newline);
-            string[] userdata = new string[4];
-
-            for (int i = 0; i < info.Length; i++)
-            {
-                for (int j = 0; j < 4; j++)
-                {
-                    userdata[j] = info[i];
-                }
-                users.Add(new UserAccount(userdata[0], userdata[1], userdata[2], userdata[3]));
-            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -56,19 +41,12 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            UserAccount x = new UserAccount("first", "Last", "username", "password");
-            if (UsernameBox.Text == x.Email && x.password_matches(PasswordBox.Text) == true)
-            {
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Close();
-              
-            }
-            else
-            {
-                MessageBox.Show("Username or password is incorrect!");
-               
-            }
+            string dirpath = "Accounts/" + UsernameBox.Text.ToString();
+            string path = "Accounts/" + UsernameBox.Text.ToString() + "/" + UsernameBox.Text.ToString() + ".txt";
+
+            Directory.CreateDirectory(dirpath);
+            string[] info = File.ReadAllLines(path);
+
 
         }
 

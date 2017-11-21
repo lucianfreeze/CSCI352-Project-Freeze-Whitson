@@ -22,7 +22,6 @@ public class UserAccount
         this.password = password;
         this.firstname = firstname;
         this.lastname = lastname;
-        SignIn();
     }
 
     public void SignIn()
@@ -32,23 +31,23 @@ public class UserAccount
         string info = File.ReadAllText(path);
         char newline = '\n';
         fileInfo = info.Split(newline);
-        
-
-
     }
 
     public void SaveAccount()
     {
-        string path = "Accounts/UserAccounts.txt";
-
-        List<string> info = new List<string>()
+        string dirpath = "Accounts/" + email;
+        string path = "Accounts/" + email + "/" + email + ".txt";
+    List <string> info = new List<string>()
         {
             firstname,
             lastname,
             email,
             password
         };
+        Directory.CreateDirectory(dirpath);
+        
         File.AppendAllLines(path, info);
+        
     }
 
     public bool password_matches(string entered)
