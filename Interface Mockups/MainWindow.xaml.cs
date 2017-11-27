@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.OleDb;
 using System.IO;
 
 namespace Interface_Mockups
@@ -41,13 +42,9 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string dirpath = "Accounts/" + UsernameBox.Text.ToString();
-            string path = "Accounts/" + UsernameBox.Text.ToString() + "/" + UsernameBox.Text.ToString() + ".txt";
-
-            Directory.CreateDirectory(dirpath);
-            string[] info = File.ReadAllLines(path);
-
-
+            //OleDbConnection database = new OleDbConnection();
+            //https://stackoverflow.com/questions/10273940/using-access-databases-in-c
+            //https://stackoverflow.com/questions/30315714/how-to-check-username-and-password-in-access-database
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
