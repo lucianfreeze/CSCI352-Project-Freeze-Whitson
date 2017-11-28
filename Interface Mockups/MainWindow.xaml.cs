@@ -22,9 +22,6 @@ namespace Interface_Mockups
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string[] info;
-        List<UserAccount> users;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -42,9 +39,34 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //OleDbConnection database = new OleDbConnection();
-            //https://stackoverflow.com/questions/10273940/using-access-databases-in-c
-            //https://stackoverflow.com/questions/30315714/how-to-check-username-and-password-in-access-database
+            string connectionString =
+            @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+            @"Data Source=Database1.accdb;" +
+            @"User Id=;Password=;";
+
+            string queryString = "SELECT Foo FROM Bar";
+
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            using (OleDbCommand command = new OleDbCommand(queryString, connection))
+            {
+                try
+                {
+                    connection.Open();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Console.WriteLine(reader[0].ToString());
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            // https://stackoverflow.com/questions/10273940/using-access-databases-in-c
+            // https://stackoverflow.com/questions/30315714/how-to-check-username-and-password-in-access-database
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
