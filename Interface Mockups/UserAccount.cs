@@ -33,15 +33,6 @@ public class UserAccount
         this.lastname = lastname;
     }
 
-    public void SignIn()
-    {
-        string path = "Accounts/UserAccounts.txt";
-        string[] fileInfo;
-        string info = File.ReadAllText(path);
-        char newline = '\n';
-        fileInfo = info.Split(newline);
-    }
-
     public void SaveAccount()
     {
         // connection arguments
@@ -52,11 +43,11 @@ public class UserAccount
         // initialize connection
         OleDbConnection connection = new OleDbConnection(connectionString);
 
-        // SQL query
+        // SQL query strings
         string queryString = "SELECT count(*) FROM Users WHERE Username='" + email + "'";
         string queryAmtString = "SELECT count(*) FROM Users";
 
-        // query
+        // query and query for amount of rows
         using (OleDbCommand command = new OleDbCommand(queryString, connection))
         using (OleDbCommand amtCommand = new OleDbCommand(queryAmtString, connection))
         {
