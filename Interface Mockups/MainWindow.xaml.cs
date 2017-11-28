@@ -39,14 +39,18 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            // connection arguments
             string connectionString =
             @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-            @"Data Source=Database1.accdb;" +
-            @"User Id=;Password=;";
+            @"Data Source=.\Database1.accdb;";
 
-            string queryString = "SELECT Foo FROM Bar";
+            // SQL query
+            string queryString = "SELECT Password FROM Users WHERE Username='" + UsernameBox.Text + "'";
 
+            // initialize connection
             using (OleDbConnection connection = new OleDbConnection(connectionString))
+            
+            // query
             using (OleDbCommand command = new OleDbCommand(queryString, connection))
             {
                 try
@@ -56,13 +60,22 @@ namespace Interface_Mockups
 
                     while (reader.Read())
                     {
-                        Console.WriteLine(reader[0].ToString());
+                        if(PasswordBox.Text == reader[0].ToString())
+                        {
+                            Dashboard dashboard = new Dashboard();
+                            Close();
+                            dashboard.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Password incorrect!");
+                        }
                     }
                     reader.Close();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    MessageBox.Show(ex.Message);
                 }
             }
             // https://stackoverflow.com/questions/10273940/using-access-databases-in-c
