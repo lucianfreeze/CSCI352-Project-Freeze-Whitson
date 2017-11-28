@@ -17,11 +17,11 @@
         <Label Content="Confirm Password:" HorizontalAlignment="Left" Margin="-4,223,0,0" Foreground="White" FontSize="20" VerticalAlignment="Top"/>
         <Label Content="Please enter the following information to sign up." Foreground="White" FontSize="20" Margin="0,0,0,430" Height="40"/>
         <Button Content="Confirm" FontSize="20" Margin="170,273,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="36" Click="Button_Click"/>
-        <TextBox x:Name="SignUpNameBox" HorizontalAlignment="Left" Height="23" Margin="170,84,0,0" TextWrapping="Wrap" Text="Lucian" VerticalAlignment="Top" Width="211"/>
-        <TextBox x:Name="SignUpLastNameBox" HorizontalAlignment="Left" Height="23" Margin="170,123,0,0" TextWrapping="Wrap" Text="Freeze" VerticalAlignment="Top" Width="211"/>
-        <TextBox x:Name="SignUpEmailBox" HorizontalAlignment="Left" Height="23" Margin="170,160,0,0" TextWrapping="Wrap" Text="genericemail@mail4fun.com" VerticalAlignment="Top" Width="211"/>
-        <TextBox x:Name="SignUpPasswordBox" HorizontalAlignment="Left" Height="23" Margin="170,197,0,0" TextWrapping="Wrap" Text="password1234" VerticalAlignment="Top" Width="211"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,234,0,0" TextWrapping="Wrap" Text="password1234" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="SignUpNameBox" HorizontalAlignment="Left" Height="23" Margin="170,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="SignUpLastNameBox" HorizontalAlignment="Left" Height="23" Margin="170,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="SignUpEmailBox" HorizontalAlignment="Left" Height="23" Margin="170,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="SignUpPasswordBox" HorizontalAlignment="Left" Height="23" Margin="170,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+        <TextBox x:Name="PasswordConfirmBox" HorizontalAlignment="Left" Height="23" Margin="170,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
 
     </Grid>
 </Window>

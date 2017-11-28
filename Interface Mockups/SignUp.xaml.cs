@@ -26,11 +26,25 @@ namespace Interface_Mockups
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            UserAccount userAccount = new UserAccount(SignUpNameBox.Text, SignUpLastNameBox.Text, SignUpEmailBox.Text, SignUpPasswordBox.Text);
-            userAccount.SaveAccount();
-            Window MainWindow = new MainWindow();
-            MainWindow.Show();
-            this.Close();
+            if(SignUpNameBox.Text != "" && SignUpLastNameBox.Text != "" && SignUpEmailBox.Text != "" && SignUpPasswordBox.Text != "")
+            {
+                if(SignUpPasswordBox.Text == PasswordConfirmBox.Text)
+                {
+                    UserAccount userAccount = new UserAccount(SignUpNameBox.Text, SignUpLastNameBox.Text, SignUpEmailBox.Text, SignUpPasswordBox.Text);
+                    userAccount.SaveAccount();
+                    Window MainWindow = new MainWindow();
+                    MainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Passwords do not match!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("All fields are required!");
+            }
         }
     }
 }
