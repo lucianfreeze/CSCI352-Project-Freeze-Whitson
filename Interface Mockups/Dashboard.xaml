@@ -15,7 +15,7 @@
             </TabControl.Background>
             <TabItem Header="Accounts" Width="200">
                 <StackPanel Margin="109,10,109,10" Orientation="Vertical">
-                    <Button Height="100" Width="850" Content="+Add New Account" TextBlock.FontSize="45"/>
+                    <Button Height="100" Width="850" Content="+Add New Account" TextBlock.FontSize="45" Click="Button_Click_1"/>
                     <Button Height="50" Width="100" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>
                 </StackPanel>
             </TabItem>

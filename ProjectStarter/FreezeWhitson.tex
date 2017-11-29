@@ -653,7 +653,7 @@ A reports section will be implemented to allow users to visually examine their t
 \subsection{Background}
 
 
-Inspiration for this project came from the stereotypical financial struggle of a college student. We wanted to create an application that might possibly help those in this situation.
+Inspiration for this project came from the stereotypical financial struggle of a college student. We wanted to create an application that might possibly help those in this situation by allowing them to better manage their finances in an easy to use application.
 
 
 \subsection{Challenges}
@@ -689,15 +689,15 @@ Additional goals for this project include incorporating real-time investment pro
 \begin{itemize}
 \item[Use Case \#:] 1
 \item[Use Case Name:] Create User Account
-\item[Description:] A user would like to create an account within the application. They will click on a "Create User Account" button. This event will transition the user to a new page where they can enter their user information and confirm their account.
+\item[Description:] A user would like to create an account within the application. They will click on a "Sign Up" button. This event will transition the user to a new page where they can enter their user information and confirm their account.
 \end{itemize}
 
 Flow:
 
 \begin{enumerate}
-\item User left-clicks on "Create User Account" button on the initial page.
+\item User left-clicks on "Sign Up" button on the initial page.
 \item User is presented with a new page to enter user account details such as username, password, etc. 
-\item If username is not taken, user account is created and the Dashboard page is shown. Otherwise, new username must be chosen.
+\item If username is not taken, user account is created and the "Sign In" page is shown. Otherwise, new username must be chosen.
 \item[At Termination:] The user now has a user account and access to the rest of the application's utlilities.
 \end{enumerate}
 
@@ -730,9 +730,98 @@ Flow:
 \item[At Termination:] The user is able to view their budgets.
 \end{enumerate}
 
+\begin{itemize}
+\item[Use Case \#:] 4
+\item[Use Case Name:] Create new budget
+\item[Description:] A user would like to create a new budget to track specific spending. They will click on the "Budgets" tab. This event will trigger the 'Budgets" page to appear. The user can then click the "New Budget" button to enter the budget details and allocate funds.
+\end{itemize}
+
+
+Flow:
+
+\begin{enumerate}
+\item User left-clicks on the "Budgets" tab.
+\item User is presented with the "Budgets" tab/page.
+\item User clicks the "New Budget" button.
+\item User enters budget information.
+\item[At Termination:] The user now has a new budget.
+\end{enumerate}
+
 \newpage
 
-\subsection{Interface Mockups}
+\begin{itemize}
+\item[Use Case \#:] 5
+\item[Use Case Name:] Edit/Delete budget
+\item[Description:] A user would like to view their budgets within the application. They will click on "Budgets" tab. This event will trigger the "Budgets" page to appear. The user can then click the"Edit" button and will be presented with the edit page where they can reallocate funds or delete the budget altogether.
+\end{itemize}
+
+Flow:
+
+\begin{enumerate}
+\item User left-clicks on the "Budgets" tab.
+\item User is presented with the "Budgets" tab/page.
+\item User clicks the "edit" button on the budget they wish to edit. 
+\item User is presented with options to edit or delete the budget.
+\item[At Termination:] The user is able to edit fund allocation or delete their budget.
+\end{enumerate}
+
+
+
+\begin{itemize}
+\item[Use Case \#:] 6
+\item[Use Case Name:] Edit/Delete Bank Account
+\item[Description:] A user would like to edit or delete a Bank Account within the application. They will click on "Accounts" tab. This event will trigger the "Accounts" page to appear. The user can then click the"Edit" button and will be presented with the edit page where they can edit account settings/details or delete the account altogether.
+\end{itemize}
+
+Flow:
+
+\begin{enumerate}
+\item User left-clicks on the "Accounts" tab.
+\item User is presented with the "Accounts" tab/page.
+\item User clicks the "edit" button on the Bank Account they wish to edit. 
+\item User is presented with options to edit or delete the Bank Account
+\item[At Termination:] The user is able to edit account settings/details or delete the account.
+\end{enumerate}
+
+\begin{itemize}
+\item[Use Case \#:] 7
+\item[Use Case Name:] View Reports
+\item[Description:] A user would like to view Reports within the application. They will click on "Reports" tab. This event will trigger the "Reports" page to appear. The user can then view their Reports. 
+\end{itemize}
+
+Flow:
+
+\begin{enumerate}
+\item User left-clicks on the "Reports" tab.
+\item User is presented with the "Reports" tab/page.
+\item[At Termination:] The user is able to view their Reports.
+\end{enumerate}
+
+\newpage
+
+\section {Timeline}
+\subsection {Week of Nov 27th}
+Penultimate writeup completion, implementation of individual dashboard functionality, and implementation of bank account functionality. Also fleshing out database format and operations.
+\subsection {Week of Dec 1}
+Implementation of budgets and reports. Further debugging.
+
+
+
+
+
+
+\section {Project Structure}
+User accounts and bank accounts depend upon an Access database file for storage between sessions. Users login through the initial sign in page and their data is read from the database, then is passed to the dashboard through the \texttt{UserAccount} account object. If a user does not have an account they access the sign up page to create one whic h is subsequently stored in the database. In the dashboard, functionaltiy is highly graphical with users being able to interact with the application interface largely through clicking, with occasional typing for editing. Users can create \texttt{BankAccount} objects with these actions within the Accounts section of the dashboard. These objects can either be Checking or Savings accounts through Inheritance from the \texttt{BankAccount} class. Transaction data is stored within the database for each account object as well.
+
+
+
+
+
+
+
+
+\newpage
+\section{Interface Mockups}
 
 \begin{figure}[h]
 \centering
