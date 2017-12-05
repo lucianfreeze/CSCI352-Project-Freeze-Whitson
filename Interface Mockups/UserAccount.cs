@@ -56,9 +56,9 @@ public class UserAccount
             {
                 try
                 {
-                    string insertString = "INSERT INTO Users ([First], [Last], [Username], [Password], [Checking ID], [Savings ID]) VALUES ('" + firstname + "','" + lastname + "','" + email + "','" + password + "','" + Convert.ToInt32(AcctNum+1) + "','" + Convert.ToInt32(AcctNum+2) + "');";
-                    string checkingInsert = "INSERT INTO Account ([Account ID], [Account Type ID], [Account Balance]) VALUES ('" + Convert.ToInt32(AcctNum + 1) + "','1','0.00');";
-                    string savingsInsert = "INSERT INTO Account ([Account ID], [Account Type ID], [Account Balance]) VALUES ('" + Convert.ToInt32(AcctNum + 2) + "','2','0.00');";
+                    string insertString = "INSERT INTO Users ([First], [Last], [Username], [Password], [CheckingID], [SavingsID]) VALUES ('" + firstname + "','" + lastname + "','" + email + "','" + password + "','" + Convert.ToInt32(AcctNum+1) + "','" + Convert.ToInt32(AcctNum+2) + "');";
+                    string checkingInsert = "INSERT INTO Account ([AccountID], [AccountTypeID], [AccountBalance]) VALUES ('" + Convert.ToInt32(AcctNum + 1) + "','1','0.00');";
+                    string savingsInsert = "INSERT INTO Account ([AccountID], [AccountTypeID], [AccountBalance]) VALUES ('" + Convert.ToInt32(AcctNum + 2) + "','2','0.00');";
                     MessageBox.Show(insertString);
                     OleDbCommand cmd = new OleDbCommand(insertString, connection);
                     cmd.ExecuteNonQuery();

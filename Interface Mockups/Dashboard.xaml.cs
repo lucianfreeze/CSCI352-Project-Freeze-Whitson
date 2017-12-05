@@ -28,7 +28,7 @@ namespace Interface_Mockups
             @"Data Source=BankApplication.accdb;";
 
             // SQL query
-            string queryString = "SELECT Account.AccountBalance FROM Account INNER JOIN Users ON Account.AccountID = Users.CheckingID WHERE Users.Username = " + username +";";
+            string queryString = "SELECT Account.AccountBalance FROM Account INNER JOIN Users ON Account.AccountID = Users.CheckingID WHERE Users.Username = " + username + ";";
 
             // initialize connection
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -65,16 +65,16 @@ namespace Interface_Mockups
             this.Close();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Transactions savings = new Transactions();
-            savings.Show();
-        }
-
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Transactions checking = new Transactions();
             checking.Show();
+        }
+
+        private void savings_Click(object sender, RoutedEventArgs e)
+        {
+            Transactions savings = new Transactions();
+            savings.Show();
         }
     }
 }

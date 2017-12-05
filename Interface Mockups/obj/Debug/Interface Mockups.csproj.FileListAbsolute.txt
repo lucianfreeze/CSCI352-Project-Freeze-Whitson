@@ -131,7 +131,6 @@ C:\Users\bremwhit\Desktop\csci352\Interface Mockups\obj\Debug\Interface Mockups.
 C:\Users\bremwhit\Desktop\csci352\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
 C:\Users\bremwhit\Desktop\csci352\Interface Mockups\obj\Debug\Interface Mockups.exe
 C:\Users\bremwhit\Desktop\csci352\Interface Mockups\obj\Debug\Interface Mockups.pdb
-C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\bin\Debug\Database1.accdb
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\bin\Debug\Interface Mockups.exe.config
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\bin\Debug\Interface Mockups.exe
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\bin\Debug\Interface Mockups.pdb
@@ -140,7 +139,6 @@ C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mocku
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\MainWindow.g.cs
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\SignUp.g.cs
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\App.g.cs
-C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Interface Mockups_Content.g.cs
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
 C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Dashboard.baml
@@ -234,3 +232,5 @@ C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interfac
 C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
 C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
 C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
+C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Transactions.g.cs
+C:\Users\lfreeze\Dropbox\Collabos\CSCI352-Project-Freeze-Whitson\Interface Mockups\obj\Debug\Transactions.baml
