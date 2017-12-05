@@ -1,0 +1,14 @@
+﻿Address account data display
+	Balances on button
+	Transaction data page
+		Transaction add/delete
+
+Address transaction type labels
+	Add in DB and code
+
+Address budgets
+	sliders
+	per transaction type
+
+Address reports
+	from transaction data

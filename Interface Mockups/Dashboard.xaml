@@ -21,10 +21,10 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Budgets" Width="200">
-                <Label Content="Budget stuff" FontSize="100" Foreground="White"/>
+                
             </TabItem>
             <TabItem Header="Reports" Width="200">
-                <Label Content="Report Stuff" FontSize="100" Foreground="White"/>
+                
             </TabItem>
             <TabItem Header="Account Settings" Width="200">
                 <Button Width="100" Height="50" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>

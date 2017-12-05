@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database1.accdb")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("notes.txt")]
 
 
