@@ -17,9 +17,9 @@ namespace Interface_Mockups
     /// <summary>
     /// Interaction logic for Checking.xaml
     /// </summary>
-    public partial class Checking : Window
+    public partial class Transactions : Window
     {
-        public Checking()
+        public Transactions()
         {
             InitializeComponent();
         }

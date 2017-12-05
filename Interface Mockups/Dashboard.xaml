@@ -16,8 +16,8 @@
             <TabItem Header="Accounts" Width="200">
                 <StackPanel Margin="109,10,109,10" Orientation="Vertical">
                     <Label x:Name="Greeting" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
-                    <Button Content="Checking Account" Height="50" FontSize="20" Click="Button_Click_2"/>
-                    <Button Content="Savings Account" Height="50" FontSize="20"/>
+                    <Button x:Name="checking" Content="Checking Account             Balance = " Height="50" FontSize="20" Click="Button_Click_2"/>
+                    <Button x:Name ="savings" Content="Savings Account               Balance = " Height="50" FontSize="20"/>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Budgets" Width="200">

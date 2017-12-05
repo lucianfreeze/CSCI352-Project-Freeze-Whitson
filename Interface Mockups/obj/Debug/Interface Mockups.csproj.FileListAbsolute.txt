@@ -213,3 +213,24 @@ C:\Users\bremwhit\Desktop\project clone\Interface Mockups\obj\Debug\Interface Mo
 C:\Users\bremwhit\Desktop\project clone\Interface Mockups\obj\Debug\Interface Mockups.pdb
 C:\Users\bremwhit\Desktop\project clone\Interface Mockups\obj\Debug\Checking.g.cs
 C:\Users\bremwhit\Desktop\project clone\Interface Mockups\obj\Debug\Checking.baml
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csprojResolveAssemblyReference.cache
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Transactions.g.cs
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.g.cs
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.g.cs
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\SignUp.g.cs
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\App.g.cs
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.cache
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups_MarkupCompile.lref
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.exe
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.pdb
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe.config
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.exe
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\bin\Debug\Interface Mockups.pdb
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Transactions.baml
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Dashboard.baml
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\MainWindow.baml
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\SignUp.baml
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.g.resources
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface_Mockups.Properties.Resources.resources
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.GenerateResource.Cache
+C:\Users\lfreeze\OneDrive\Interface Mockups\Interface Mockups\obj\Debug\Interface Mockups.csproj.CoreCompileInputs.cache
