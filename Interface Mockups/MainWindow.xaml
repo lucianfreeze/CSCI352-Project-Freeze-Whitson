@@ -10,7 +10,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/financial.png" Opacity="0.75"/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Forgot Password?" VerticalAlignment="Top" Foreground="White" TextDecorations="Underline" Margin="-130,216,0,0"/>
         <Grid Margin="185,132,351,132">
             <Label Content=" Sign In: " HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Width="158" />
             <TextBox x:Name="UsernameBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="158" Margin="0,58,0,0" GotFocus="UsernameBox_GotFocus"/>
@@ -20,7 +19,13 @@
 
 
         </Grid>
-
+        <Button Margin="0,475,660,0" Background="Transparent" Content="Support" FontSize="25" Foreground="LightBlue" Click="Button_Click_2" BorderBrush="{x:Null}">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <ContentPresenter/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Window>
