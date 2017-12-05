@@ -27,16 +27,6 @@ namespace Interface_Mockups
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // connection arguments
@@ -88,5 +78,16 @@ namespace Interface_Mockups
             signup.Show();
             this.Close();
         }
+
+        private void UsernameBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            UsernameBox.Clear();
+        }
+
+        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            PasswordBox.Clear();
+        }
+
     }
 }
