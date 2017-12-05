@@ -19,9 +19,10 @@ namespace Interface_Mockups
     /// </summary>
     public partial class Dashboard : Window
     {
-        public Dashboard()
+        public Dashboard(string username)
         {
             InitializeComponent();
+            Greeting.Content = "Hello, " + username + "!";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

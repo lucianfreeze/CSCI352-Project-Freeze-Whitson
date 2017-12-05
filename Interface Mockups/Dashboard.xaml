@@ -15,8 +15,9 @@
             </TabControl.Background>
             <TabItem Header="Accounts" Width="200">
                 <StackPanel Margin="109,10,109,10" Orientation="Vertical">
-                    <Button Height="100" Width="850" Content="+Add New Account" TextBlock.FontSize="45" Click="Button_Click_1"/>
-                    <Button Height="50" Width="100" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>
+                    <Label x:Name="Greeting" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
+                    <Button Content="Checking Account" Height="50" FontSize="20"/>
+                    <Button Content="Savings Account" Height="50" FontSize="20"/>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Budgets" Width="200">
@@ -26,7 +27,7 @@
                 <Label Content="Report Stuff" FontSize="100" Foreground="White"/>
             </TabItem>
             <TabItem Header="Account Settings" Width="200">
-                <Label Content="Account settings" FontSize="100" Foreground="White" Margin="0,0,0,500"/>
+                <Button Width="100" Height="50" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>
             </TabItem>
         </TabControl>
 

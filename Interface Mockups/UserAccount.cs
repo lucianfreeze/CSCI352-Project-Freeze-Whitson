@@ -21,9 +21,7 @@ public class UserAccount
     private string email { get; set; }
     private string password { get; set; }
     private string firstname { get; set; }
-    private string lastname { get; set; }
-
-    private List<BankAccount> BankAccounts;
+    private string lastname { get; set; } 
 
     public UserAccount(string firstname, string lastname, string email, string password)
     {
@@ -38,30 +36,36 @@ public class UserAccount
         // connection arguments
         string connectionString =
         @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-        @"Data Source=.\Database1.accdb;";
+        @"Data Source=BankApplication.accdb;";
 
         // initialize connection
         OleDbConnection connection = new OleDbConnection(connectionString);
 
         // SQL query strings
         string queryString = "SELECT count(*) FROM Users WHERE Username='" + email + "'";
-        string queryAmtString = "SELECT count(*) FROM Users";
+        string queryAcctAmtString = "SELECT count(*) FROM Account";
 
         // query and query for amount of rows
         using (OleDbCommand command = new OleDbCommand(queryString, connection))
-        using (OleDbCommand amtCommand = new OleDbCommand(queryAmtString, connection))
+        using (OleDbCommand amtCommand = new OleDbCommand(queryAcctAmtString, connection))
         {
             connection.Open();
             int result = (int)command.ExecuteScalar();
-            int amtRows = (int)amtCommand.ExecuteScalar();
+            int AcctNum = (int)amtCommand.ExecuteScalar();
             if (result == 0)
             {
                 try
                 {
-                    string insertString = "INSERT INTO Users ([ID], [First], [Last], [Username], [Password]) VALUES ('" + (amtRows+ 1) + "','" + firstname + "','" + lastname + "','" + email + "','" + password + "');";
+                    string insertString = "INSERT INTO Users ([First], [Last], [Username], [Password], [Checking ID], [Savings ID]) VALUES ('" + firstname + "','" + lastname + "','" + email + "','" + password + "','" + Convert.ToInt32(AcctNum+1) + "','" + Convert.ToInt32(AcctNum+2) + "');";
+                    string checkingInsert = "INSERT INTO Account ([Account ID], [Account Type ID], [Account Balance]) VALUES ('" + Convert.ToInt32(AcctNum + 1) + "','1','0.00');";
+                    string savingsInsert = "INSERT INTO Account ([Account ID], [Account Type ID], [Account Balance]) VALUES ('" + Convert.ToInt32(AcctNum + 2) + "','2','0.00');";
                     MessageBox.Show(insertString);
                     OleDbCommand cmd = new OleDbCommand(insertString, connection);
                     cmd.ExecuteNonQuery();
+                    OleDbCommand ChkCmd = new OleDbCommand(checkingInsert, connection);
+                    ChkCmd.ExecuteNonQuery();
+                    OleDbCommand SavCmd = new OleDbCommand(savingsInsert, connection);
+                    SavCmd.ExecuteNonQuery();
                     MessageBox.Show("Account Created Successfully!");
                 }
                 catch (Exception ex)
@@ -78,12 +82,6 @@ public class UserAccount
 
         // http://stepcoder.com/Articles/10014/how-to-insert-record-into-access-database-using-c-sharp-net
 
-    }
-    public bool password_matches(string entered)
-    {
-        if (entered == password)
-            return true;
-        return false;
     }
     
     public string Email

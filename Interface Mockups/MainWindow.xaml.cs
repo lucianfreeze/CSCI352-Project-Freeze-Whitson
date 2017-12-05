@@ -42,7 +42,7 @@ namespace Interface_Mockups
             // connection arguments
             string connectionString =
             @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-            @"Data Source=.\Database1.accdb;";
+            @"Data Source=BankApplication.accdb;";
 
             // SQL query
             string queryString = "SELECT Password FROM Users WHERE Username='" + UsernameBox.Text + "'";
@@ -62,7 +62,7 @@ namespace Interface_Mockups
                     {
                         if(PasswordBox.Text == reader[0].ToString())
                         {
-                            Dashboard dashboard = new Dashboard();
+                            Dashboard dashboard = new Dashboard(UsernameBox.Text);
                             Close();
                             dashboard.Show();
                         }
