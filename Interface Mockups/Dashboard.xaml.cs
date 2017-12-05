@@ -36,5 +36,11 @@ namespace Interface_Mockups
         {
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Checking checking = new Checking();
+            checking.Show();
+        }
     }
 }
