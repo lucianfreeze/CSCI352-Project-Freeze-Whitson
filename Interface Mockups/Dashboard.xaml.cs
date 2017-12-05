@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.OleDb;
 
 namespace Interface_Mockups
 {
@@ -21,8 +22,40 @@ namespace Interface_Mockups
     {
         public Dashboard(string username)
         {
+            // connection arguments
+            string connectionString =
+            @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+            @"Data Source=BankApplication.accdb;";
+
+            // SQL query
+            string queryString = "SELECT Account.AccountBalance FROM Account INNER JOIN Users ON Account.AccountID = Users.CheckingID WHERE Users.Username = " + username +";";
+
+            // initialize connection
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+
+            // query
+            using (OleDbCommand command = new OleDbCommand(queryString, connection))
+            {
+                try
+                {
+                    connection.Open();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        checking.Content += reader[0].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
             InitializeComponent();
             Greeting.Content = "Hello, " + username + "!";
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,7 +67,14 @@ namespace Interface_Mockups
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Transactions savings = new Transactions();
+            savings.Show();
+        }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Transactions checking = new Transactions();
+            checking.Show();
         }
     }
 }

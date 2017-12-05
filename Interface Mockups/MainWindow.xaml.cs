@@ -29,7 +29,7 @@ namespace Interface_Mockups
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         private void PasswordBox_TextChanged(object sender, TextChangedEventArgs e)
