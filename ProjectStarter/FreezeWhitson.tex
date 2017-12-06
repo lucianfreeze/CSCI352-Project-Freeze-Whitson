@@ -800,23 +800,48 @@ Flow:
 \newpage
 
 \section {Timeline}
-\subsection {Week of Nov 27th}
-Penultimate writeup completion, implementation of individual dashboard functionality, and implementation of bank account functionality. Also fleshing out database format and operations.
-\subsection {Week of Dec 1}
-Implementation of budgets and reports. Further debugging.
-
-
-
+\subsection {Deliverable 1}
+Due: 9/5/17
+\subsection {Deliverable 2}
+Due: 9/21/17
+\subsection {Deliverable 3}
+Due: 10/12/17
+\subsection {Deliverable 3.5}
+Due: 10/12/17
+\subsection {Deliverable 4}
+Due: 11/21/17
+\subsection {Deliverable 5}
+Due: 11/28/17
+\subsection {Deliverable 6}
+Due: 12/5/17
+\subsection {Deliverable 7}
+Due: 12/6/17
 
 
 
 \section {Project Structure}
-User accounts and bank accounts depend upon an Access database file for storage between sessions. Users login through the initial sign in page and their data is read from the database, then is passed to the dashboard through the \texttt{UserAccount} account object. If a user does not have an account they access the sign up page to create one whic h is subsequently stored in the database. In the dashboard, functionaltiy is highly graphical with users being able to interact with the application interface largely through clicking, with occasional typing for editing. Users can create \texttt{BankAccount} objects with these actions within the Accounts section of the dashboard. These objects can either be Checking or Savings accounts through Inheritance from the \texttt{BankAccount} class. Transaction data is stored within the database for each account object as well. Budget object data for the object's category (transaction type) will adjust as Transaction data is entered by the user. Reports will be generated using data from the transactions.
+User accounts and bank accounts depend upon an Access database file for storage between sessions. Users login through the initial sign in page and their data is read from the database, then is passed to the Dashboard. If a user does not have an account they access the sign up page to create one which is subsequently stored in the database. In the Dashboard, functionality is highly graphical with users being able to interact with the application interface largely through clicking, with occasional typing for editing. Users have a Checking Account and a Savings Account stored in the database and viewable/editable within the Accounts section of the dashboard. Transaction data is stored within the database for each account and can be viewed/edited by the user within each bank account. Budget data for the object's category (transaction type) will adjust as Transaction data is entered by the user. Reports will be generated using data from the transactions.
 
+\subsection {UML Outline}
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.6]{databaseDiagram.png}
+\caption{This is a DIA diagram of our program and database's structure.}
+\label{dbdiagram}
+\end{figure}
 
+\newpage
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.6]{programDiagram.png}
+\caption{This is a DIA diagram of our program and database's structure.}
+\label{programdiagram}
+\end{figure}
 
+\subsection {Design Patterns Used}
+Though much of the application relies on interaction with a database, a theming feature is implemented with the Abstract Factory Pattern to give users the ability to change the application's appearance. 
 
 
 
@@ -844,119 +869,11 @@ User accounts and bank accounts depend upon an Access database file for storage 
 \label{dashboard}
 \end{figure}
 
+\section {Results}
+On the whole, this project has been slightly more ambitious than initially planned. We did not forsee the challenges of working with databases, which we recently discovered would be a massive part of the program. However, our team as a whole feels that the project was a great learning experience, especially due to this challenge. We have earned some experience with SQL on top of the C# we already were working with. The Accounts section and Transactions within it are largely complete, but the Budgets and Reports sections did not receive the attention we had intended to them (thus they are unimplemented).
 
-
-
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
-
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
-
-%You should not need appendices for the lab, here are some commented out examples in case
-
-%\appendices
-%\section{Proof of the First Zonklar Equation}
-%Appendix one text goes here.
-
-% you can choose not to have a title for an appendix
-% if you want by leaving the argument blank
-%\section{}
-%Appendix two text goes here.
-
-
-% use section* for acknowledgment
-%\ifCLASSOPTIONcompsoc
-  % The Computer Society usually uses the plural form
-%  \section*{Acknowledgments}
-%\else
-  % regular IEEE prefers the singular form
-%  \section*{Acknowledgment}
-%\fi
-
-
-%The authors would like to thank...
-
-
-% Can use something like this to put references on a page
-% by themselves when using endfloat and the captionsoff option.
-%\ifCLASSOPTIONcaptionsoff
-%  \newpage
-%\fi
-
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-
-%Make sure to reference any resource used aside from the lab itself!
-%(you can make a separate *.bib file if preferred, this just tends to be the quick and dirty approach)
-
-
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
-
-%Ignore this for the lab
-
-
-% if you will not have a photo at all:
-
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalized.
-
-%\vfill
-
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
-
-
+\subsection{Future Work}
+We would like to see this application finished as we intended, but also with the addition of real bank APIs and possibly an investment section.
 
 % that's all folks
 \end{document}
