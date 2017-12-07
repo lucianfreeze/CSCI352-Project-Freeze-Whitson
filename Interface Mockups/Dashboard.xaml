@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interface_Mockups"
         Title="Dashboard" Height="720" Width="1080" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid>
+    <Grid x:Name="imagebackground">
         <Grid.Background>
             <ImageBrush ImageSource="images/Feas2.jpg" Stretch="Fill"/>
         </Grid.Background>
@@ -14,11 +14,19 @@
                 <ImageBrush/>
             </TabControl.Background>
             <TabItem Header="Accounts" Width="200">
-                <StackPanel Margin="109,10,109,10" Orientation="Vertical">
+                <Grid >
                     <Label x:Name="Greeting" FontSize="30" Foreground="White" HorizontalAlignment="Center"/>
-                    <Button x:Name="checking" Content="Checking Account             Balance = " Height="50" FontSize="20" Click="Button_Click_2"/>
-                    <Button x:Name ="savings" Content="Savings Account               Balance = " Height="50" FontSize="20" Click="savings_Click"/>
-                </StackPanel>
+                    <Button x:Name="checking" Content="Checking Account      Balance = $" Height="50" FontSize="20" Click="checking_Click" Margin="0,120,539,493"/>
+                    <Button x:Name ="savings" Content="Savings Account      Balance = $" Height="50" FontSize="20" Click="savings_Click" Margin="539,120,0,493"/>
+                    <TextBox x:Name="chkTransAmt" HorizontalAlignment="Left" Height="23" Margin="173,310,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Width="182" GotFocus="chkTransAmt_GotFocus"/>
+                    <TextBox x:Name="chkTransDesc" HorizontalAlignment="Left" Height="105" Margin="173,366,0,0" TextWrapping="Wrap" Text="Transaction Description" VerticalAlignment="Top" Width="182" GotFocus="chkTransDesc_GotFocus"/>
+                    <TextBox x:Name="savTransAmt" HorizontalAlignment="Left" Height="23" Margin="727,310,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Width="182" GotFocus="savTransAmt_GotFocus"/>
+                    <TextBox x:Name="savTransDesc" HorizontalAlignment="Left" Height="105" Margin="727,366,0,0" TextWrapping="Wrap" Text="Transaction Description" VerticalAlignment="Top" Width="182" GotFocus="savTransDesc_GotFocus"/>
+                    <DatePicker x:Name="checkingDate" HorizontalAlignment="Left" Margin="173,338,0,0" VerticalAlignment="Top" Width="182"/>
+                    <DatePicker x:Name="savingsDate" HorizontalAlignment="Left" Margin="727,337,0,0" VerticalAlignment="Top" Width="182"/>
+                    <Button x:Name="chkTransSave" Content="Save Transaction" HorizontalAlignment="Left" Margin="173,476,0,0" VerticalAlignment="Top" Width="182" Height="30" Click="chkTransSave_Click"/>
+                    <Button x:Name="savTransSave" Content="Save Transaction" HorizontalAlignment="Left" Margin="727,476,0,0" VerticalAlignment="Top" Width="182" Height="30" Click="savTransSave_Click"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Budgets" Width="200">
                 <Grid>
@@ -29,9 +37,17 @@
 
             </TabItem>
             <TabItem Header="Account Settings" Width="200">
-                <Button Width="100" Height="50" Content="Logout" TextBlock.FontSize="20" Click="Button_Click"/>
+                <Grid>
+                    <ComboBox HorizontalAlignment="Left" Margin="168,126,0,0" VerticalAlignment="Top" Width="120">
+                        <ComboBoxItem Content="Back in Gray" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="Profiteering Purple" Selected="ComboBoxItem_Selected_1"/>
+                        <ComboBoxItem Content="Color of Money" Selected="ComboBoxItem_Selected_2"/>
+                    </ComboBox>
+
+                </Grid>
+
             </TabItem>
         </TabControl>
-
+        <Button Content="Logout" TextBlock.FontSize="20" Click="Button_Click" Margin="500,640,499,0" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center" Height="41" VerticalAlignment="Top"/>
     </Grid>
 </Window>

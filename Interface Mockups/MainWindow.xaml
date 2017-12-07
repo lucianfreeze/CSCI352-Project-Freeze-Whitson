@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Interface_Mockups"
         mc:Ignorable="d"
         Title="Financial App" Height="551" Width="772" WindowStartupLocation="CenterScreen" Background="Black" ResizeMode="NoResize">
-    <Grid>
+    <Grid x:Name="background">
         <Grid.Background>
             <ImageBrush ImageSource="Images/financial.png" Opacity="0.75"/>
         </Grid.Background>
