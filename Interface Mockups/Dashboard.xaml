@@ -30,7 +30,24 @@
             </TabItem>
             <TabItem Header="Budgets" Width="200">
                 <Grid>
-                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="170,157,445,465"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,293,306,329"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,274,764,339"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,274,227,339"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,352,306,270"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,333,764,280"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,333,227,280"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,402,306,220"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,383,764,230"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,383,227,230"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,452,306,170"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,433,764,180"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,433,227,180"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,238,306,384"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,219,764,394"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,219,227,394"/>
+                    <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="309,183,306,439"/>
+                    <Label Content="min" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="243,164,764,449"/>
+                    <Label Content="max" Height="50" FontSize="30" Foreground="AntiqueWhite" Margin="767,164,227,449"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Account Settings" Width="200">
