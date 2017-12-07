@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Authors: Lucian Freeze / Brett Whitson
+using System;
 using System.Windows;
 
 namespace Interface_Mockups {

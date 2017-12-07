@@ -33,12 +33,10 @@
                     <Slider TickFrequency="1" Minimum="0" Maximum="100" Height="41"   Margin="170,157,445,465"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Reports" Width="200">
-
-            </TabItem>
             <TabItem Header="Account Settings" Width="200">
                 <Grid>
-                    <ComboBox HorizontalAlignment="Left" Margin="168,126,0,0" VerticalAlignment="Top" Width="120">
+                    <TextBlock Text="Themes" Height="50" Margin="44,38,865,575" FontSize="40" Foreground="AntiqueWhite"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="240" Height="62" >
                         <ComboBoxItem Content="Back in Gray" Selected="ComboBoxItem_Selected"/>
                         <ComboBoxItem Content="Profiteering Purple" Selected="ComboBoxItem_Selected_1"/>
                         <ComboBoxItem Content="Color of Money" Selected="ComboBoxItem_Selected_2"/>
