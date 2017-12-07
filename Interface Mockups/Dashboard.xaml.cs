@@ -20,21 +20,27 @@ namespace Interface_Mockups
     /// </summary>
     public partial class Dashboard : Window
     {
+        private string username;
+        private int accountID;
+
         public Dashboard(string username)
         {
+            this.username = username;
+            InitializeComponent();
             // connection arguments
             string connectionString =
             @"Provider=Microsoft.ACE.OLEDB.12.0;" +
             @"Data Source=BankApplication.accdb;";
 
             // SQL query
-            string queryString = "SELECT Account.AccountBalance FROM Account INNER JOIN Users ON Account.AccountID = Users.CheckingID WHERE Users.Username = " + username + ";";
+            string checkingQuery = "SELECT AccountBalance FROM Account WHERE Username = '" + username + "' AND AccountTypeID = 1;";
+            string savingsQuery = "SELECT AccountBalance FROM Account WHERE Username = '" + username + "' AND AccountTypeID = 2;";
 
             // initialize connection
-            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            OleDbConnection connection = new OleDbConnection(connectionString);
 
             // query
-            using (OleDbCommand command = new OleDbCommand(queryString, connection))
+            using (OleDbCommand command = new OleDbCommand(checkingQuery, connection))
             {
                 try
                 {
@@ -49,31 +55,112 @@ namespace Interface_Mockups
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message + "dashboard");
                 }
             }
 
-            InitializeComponent();
+
+            // query
+            using (OleDbCommand command = new OleDbCommand(savingsQuery, connection))
+            {
+                try
+                {
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        savings.Content += reader[0].ToString();
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + "dashboard");
+                }
+            }
+            connection.Close();
             Greeting.Content = "Hello, " + username + "!";
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow logIn = new MainWindow();
-            logIn.Show();
+            MainWindow logOut = new MainWindow();
+            logOut.Show();
             this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Transactions checking = new Transactions();
+            // connection arguments
+            string connectionString =
+            @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+            @"Data Source=BankApplication.accdb;";
+
+            // SQL query
+            string queryString = "SELECT CheckingID FROM Users WHERE Username = '" + username + "';";
+
+            // initialize connection
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+
+            // query
+            using (OleDbCommand command = new OleDbCommand(queryString, connection))
+            {
+                try
+                {
+                    connection.Open();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        accountID = Convert.ToInt32(reader[0].ToString());
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+            Transactions checking = new Transactions(accountID, username);
             checking.Show();
         }
 
         private void savings_Click(object sender, RoutedEventArgs e)
         {
-            Transactions savings = new Transactions();
+            // connection arguments
+            string connectionString =
+            @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+            @"Data Source=BankApplication.accdb;";
+
+            // SQL query
+            string queryString = "SELECT SavingsID FROM Users WHERE Username = '" + username + "';";
+
+            // initialize connection
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+
+            // query
+            using (OleDbCommand command = new OleDbCommand(queryString, connection))
+            {
+                try
+                {
+                    connection.Open();
+                    OleDbDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        accountID = Convert.ToInt32(reader[0].ToString());
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+            Transactions savings = new Transactions(accountID, username);
             savings.Show();
         }
     }

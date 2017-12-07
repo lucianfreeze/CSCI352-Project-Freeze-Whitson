@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Transactions" Height="600" Width="550" Background="#FF2D2D30" ResizeMode="NoResize">
     <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="544"/>
 
     </Grid>
 </Window>
